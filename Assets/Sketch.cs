@@ -1,6 +1,7 @@
 /*@Author: Grace Benedek Rooney
  *@UPI: gben604
  *@Subject: IS 320, Test 2
+ *@Purpose: To sketch each item from an azure database as an object in unity
  */
 
 
@@ -10,6 +11,7 @@ using System;
 
 public class Sketch : MonoBehaviour {
     public GameObject treeObject;
+	public TreeSurvey[] survey; 
 	public string _WebsiteURL = "http://is320test2gben604.azurewebsites.net/tables/TreeSurvey?zumo-api-version=2.0.0";
 
     void Start () {
@@ -23,7 +25,7 @@ public class Sketch : MonoBehaviour {
         }
 
 		//deserialises the json into objects
-		TreeSurvey[] survey = JsonReader.Deserialize<TreeSurvey[]>(jsonResponse);
+		survey = JsonReader.Deserialize<TreeSurvey[]>(jsonResponse);
 
 		//int numberOfTrees = survey.Length; //used for debugging purposes
 

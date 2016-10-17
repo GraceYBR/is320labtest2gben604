@@ -7,6 +7,7 @@
 using UnityEngine;
 using System.Collections;
 using UnityEngine.SceneManagement;
+using System.Collections;
 
 public class OnClick : MonoBehaviour {
 
@@ -50,6 +51,8 @@ public class OnClick : MonoBehaviour {
 		{
 			GUIStyle guistyle = new GUIStyle();
 			guistyle.fontSize = 30;
+			//didn't get time to finish getting the color of font to change
+			guistyle.normal.textColor = Color.white;
 			GUI.Label(new Rect(50, 50, 3000, 1000), pointData, guistyle);
 		}
 
