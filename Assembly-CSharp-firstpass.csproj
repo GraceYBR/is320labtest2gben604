@@ -283,6 +283,9 @@
  <Reference Include="UnityEngine.Analytics">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
  </Reference>
+ <Reference Include="Pathfinding.JsonFx">
+ <HintPath>/Users/gracebenedekrooney/Desktop/Grace/IS320/Labs/is320labtest2gben604/Assets/Pathfinding.JsonFx.dll</HintPath>
+ </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
